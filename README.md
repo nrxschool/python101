@@ -1,6 +1,7 @@
 # Python 101
 
 ## [A Jornada da Programação](./module01/aulas.md)
+- [teste](./module01/teste.md)
 
 1. Introdução a programação
 2. Setup
@@ -11,6 +12,7 @@
 7. Calculadora
 
 ## [Funções](./module02/aulas.md)
+- [teste](./module02/teste.md)
 
 1. Automatizando a automação
 2. Funções nativas
@@ -19,6 +21,7 @@
 5. Avançado
 
 ## [Coleções](./module03/aulas.md)
+- [teste](./module03/teste.md)
 
 1. List
 2. Set
@@ -26,6 +29,7 @@
 4. Dict
 
 ## [Módulos e Aquivos](./module04/aulas.md)
+- [teste](./module04/teste.md)
 
 1. Módulos
 2. Tratamento de erros
@@ -33,6 +37,7 @@
 4. Arquivos II
 
 ## [Orientação e Objeto](./module05/aulas.md)
+- [teste](./module05/teste.md)
 
 1. Classes
 2. Métodos Especiais
