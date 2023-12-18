@@ -1,9 +1,46 @@
 # Python 101
 
-
 ## A Jornada da Programação
+
+1. Introdução a programação
+2. Setup
+3. Input - output
+4. Matematica
+5. Condicionais
+6. Repetições
+7. Calculadora
+
 ## Funções
+
+1. Automatizando a automação
+2. Funções nativas
+3. Tipos de funções
+4. Parametros
+5. Avançado
+
 ## Coleções
-## Arquivos e Módulos
+
+1. List
+2. Set
+3. Tuple
+4. Dict
+
+## Módulos e Aquivos
+
+1. Módulos
+2. Arquivos I
+2. Arquivos II
+
 ## Orientação e Objeto
+
+1. Classes
+2. Atributos
+3. Métodos
+4. Métodos Especiais
+5. Herança
+
 ## Pyton na Prática
+
+1. RestAPI server
+2. CLI app
+3. Desktop app
