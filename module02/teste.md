@@ -7,17 +7,17 @@
 
 ## Qual das seguintes não é uma função nativa da biblioteca math em Python?
 
-- [ ] sqrt
-- [x] range
-- [ ] sin
-- [ ] exp
+- [ ] `sqrt`
+- [x] `range`
+- [ ] `sin`
+- [ ] `exp`
 
 ## Qual palavra-chave é usada em Python para definir uma função criada pelo usuário?
 
-- [ ] function
-- [ ] define
-- [x] def
-- [ ] func
+- [ ] `function`
+- [ ] `define`
+- [x] `def`
+- [ ] `func`
 
 ## O que `*args` e `**kwargs` permitem em uma função Python?
 
