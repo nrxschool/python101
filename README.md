@@ -34,13 +34,11 @@
 ## Orientação e Objeto
 
 1. Classes
-2. Atributos
-3. Métodos
 4. Métodos Especiais
+3. Métodos
 5. Herança
 
-## Pyton na Prática
+## Na Prática
 
 1. RestAPI server
-2. CLI app
-3. Desktop app
+2. Desktop app
