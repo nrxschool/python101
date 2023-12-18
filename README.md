@@ -1,6 +1,6 @@
 # Python 101
 
-## A Jornada da Programação
+## [A Jornada da Programação](./module01/aulas.md)
 
 1. Introdução a programação
 2. Setup
@@ -10,7 +10,7 @@
 6. Repetições
 7. Calculadora
 
-## Funções
+## [Funções](./module02/aulas.md)
 
 1. Automatizando a automação
 2. Funções nativas
@@ -18,28 +18,28 @@
 4. Parametros
 5. Avançado
 
-## Coleções
+## [Coleções](./module03/aulas.md)
 
 1. List
 2. Set
 3. Tuple
 4. Dict
 
-## Módulos e Aquivos
+## [Módulos e Aquivos](./module04/aulas.md)
 
 1. Módulos
 2. Tratamento de erros
 3. Arquivos I
 4. Arquivos II
 
-## Orientação e Objeto
+## [Orientação e Objeto](./module05/aulas.md)
 
 1. Classes
-4. Métodos Especiais
+2. Métodos Especiais
 3. Métodos
-5. Herança
+4. Herança
 
-## Na Prática
+## [Na Prática](./module06/aulas.md)
 
 1. RestAPI server
 2. Desktop app
