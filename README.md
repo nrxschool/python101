@@ -28,8 +28,9 @@
 ## Módulos e Aquivos
 
 1. Módulos
-2. Arquivos I
-2. Arquivos II
+2. Tratamento de erros
+3. Arquivos I
+4. Arquivos II
 
 ## Orientação e Objeto
 

@@ -17,3 +17,9 @@
 
 - Ensinar como escrever dados em um arquivo no disco
 - Refatorar o projeto de Lista de afazeres usando arquivos locais
+
+# Aula 4
+
+## Trantando erros
+
+- Ensinar sobre como tratar um erro com `try except finally else`
