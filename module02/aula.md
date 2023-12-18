@@ -26,8 +26,8 @@
 ## Tipos de parametros
 
 - Ensinar sobre como passar e consumir (input, output) parametros
-- Ensinar sobre wargs
-- Ensinar sobre kwargs
+- Ensinar sobre `*args`
+- Ensinar sobre `**kwargs`
 
 # Aula 5
 
