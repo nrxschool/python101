@@ -32,7 +32,7 @@ São elas:
 ## Como podemos processar os dados do nosso programa?
 
 - Ensinar aritmetica: `+ - * ** / //`
-- Ensinar tipos de dados: int, float, str
+- Ensinar tipos de dados: int, float, str, bool
 
 # Aula 4
 
