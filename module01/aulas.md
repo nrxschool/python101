@@ -29,27 +29,33 @@ São elas:
 
 # Aula 3
 
+## Como salvar dados no programa?
+
+- Em Python, uma **variável** é um identificador de um valor.
+
+# Aula 4
+
 ## Como podemos processar os dados do nosso programa?
 
 - Ensinar aritmetica: `+ - * ** / //`
 - Ensinar tipos de dados: int, float, str, bool
 
-# Aula 4
+# Aula 5
 
 ## Como o programa toda decisões?
 
 - Ensinar como `if else elif` funcionam
 
-# Aula 5
+# Aula 6
 
 ## Como o programa automatiza tarefas?
 
 - Ensinar a sobre `while for`
 - Ensinar sobre `range`
 
-# Aula 6
+# Aula 7
 
 ## Construindo uma calculadora de Baskhara
 
-- Ensinar com funciona baskara
+- Ensinar como funciona baskara
 - Fazer a calculadora
