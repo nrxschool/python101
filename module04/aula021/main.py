@@ -1,0 +1,36 @@
+from task.operations import adicionar_tarefa, remover_tarefa, concluir_tarefa
+from task.display import exibir_tarefas
+
+
+# Task manager
+
+
+def menu():
+    tarefas = []
+
+    while True:
+        print("\n📚 Gerenciador de tarefas")
+        print("1. Ver todas as tarefas")
+        print("2. Adicionar uma tarefa")
+        print("3. Remover uma tarefa")
+        print("4. Concluir uma tarefa")
+        print("5. Sair")
+
+        opcao = input("Escolha sua opção: ")
+
+        if opcao == "1":
+            exibir_tarefas(tarefas)
+        elif opcao == "2":
+            adicionar_tarefa(tarefas)
+        elif opcao == "3":
+            remover_tarefa(tarefas)
+        elif opcao == "4":
+            concluir_tarefa(tarefas)
+        elif opcao == "5":
+            print("\n>>>Saindo do programa<<<\n")
+            break
+        else:
+            print("\nOpção inválida")
+
+
+menu()
