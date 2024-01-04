@@ -1,0 +1,2 @@
+Aprender Python; True
+varrer a casa; False

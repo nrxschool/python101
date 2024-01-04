@@ -1,0 +1,3 @@
+Varrer a casa; True
+Lavar a louça; False
+Comprar comida; False
