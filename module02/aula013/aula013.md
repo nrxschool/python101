@@ -1,6 +1,6 @@
 # Aula 13
 
-## Criando nossas funções?
+## Criando nossas funções
 
 - Ensinar como criar funções `def return`
 - Ensinar sobre os tipos de funções, com 3 exemplos cada:

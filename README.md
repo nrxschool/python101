@@ -18,29 +18,30 @@
 
 - [teste](./module02/teste.md)
 
-1. Automatizando a automação
-2. Funções nativas
-3. Tipos de funções
-4. Parametros
-5. Avançado
+1. O que é uma função?
+2. Funções grátis (nativas)?
+3. Criando nossas funções
+4. Tipos de parametros
+5. Funções avançado
 
 ## [Coleções](./module03/aulas.md)
 
 - [teste](./module03/teste.md)
 
-1. List
-2. Set
-3. Tuple
-4. Dict
+1. Listas de dados (list)
+2. Conjuntos de dados (set)
+3. Tuplas de dados (tuple)
+4. Dicionário de dados (dict)
+5. Lista de Tarefas
 
 ## [Módulos e Aquivos](./module04/aulas.md)
 
 - [teste](./module04/teste.md)
 
-1. Módulos
-2. Tratamento de erros
-3. Arquivos I
-4. Arquivos II
+1. O que é um módulo?
+2. Lendo dados de arquivos (input)
+3. Escrevendo dados em arquivos (output)
+4. Trantando erros
 
 ## [Orientação e Objeto](./module05/aulas.md)
 

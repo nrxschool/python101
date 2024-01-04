@@ -1,5 +1,5 @@
 # Aula 20
 
-## Lista de afazeres
+## Lista de Tarefas
 
-- Ensinar sobre como fazer uma lista de afazeres
+- Ensinar sobre como fazer uma lista de Tarefas
