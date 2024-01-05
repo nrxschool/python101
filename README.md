@@ -12,47 +12,48 @@
 8. Como o programa sabe o que é verdade?
 9. Como o programa repete tarefas?
 10. Construindo uma calculadora de Bhaskara
-11. [Prova](./module01/teste.md)
+
+- [Prova](./module01/teste.md)
 
 ## [Funções](./module02/aulas.md)
 
-- [teste](./module02/teste.md)
+11. O que é uma função?
+12. Funções grátis (nativas)?
+13. Criando nossas funções
+14. Tipos de parametros
+15. Funções avançado
 
-1. O que é uma função?
-2. Funções grátis (nativas)?
-3. Criando nossas funções
-4. Tipos de parametros
-5. Funções avançado
+- [Prova](./module02/teste.md)
 
 ## [Coleções](./module03/aulas.md)
 
-- [teste](./module03/teste.md)
+16. Listas de dados (list)
+17. Conjuntos de dados (set)
+18. Tuplas de dados (tuple)
+19. Dicionário de dados (dict)
+20. Lista de Tarefas
 
-1. Listas de dados (list)
-2. Conjuntos de dados (set)
-3. Tuplas de dados (tuple)
-4. Dicionário de dados (dict)
-5. Lista de Tarefas
+- [Prova](./module03/teste.md)
 
 ## [Módulos e Aquivos](./module04/aulas.md)
 
-- [teste](./module04/teste.md)
+21. O que é um módulo?
+22. Lendo dados de arquivos (input)
+23. Escrevendo dados em arquivos (output)
+24. Trantando erros
 
-1. O que é um módulo?
-2. Lendo dados de arquivos (input)
-3. Escrevendo dados em arquivos (output)
-4. Trantando erros
+- [Prova](./module04/teste.md)
 
 ## [Orientação e Objeto](./module05/aulas.md)
 
-- [teste](./module05/teste.md)
+25. O que é uma classe?
+26. O que são métodos especiais?
+27. O que é Herança?
+28. Aplicando conhecimento!
 
-1. Classes
-2. Métodos Especiais
-3. Métodos
-4. Herança
+- [Prova](./module05/teste.md)
 
 ## [Na Prática](./module06/aulas.md)
 
-1. RestAPI server
-2. Desktop app
+29. RestAPI server
+30. Desktop app
