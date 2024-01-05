@@ -1,0 +1,3 @@
+2; varrer a casa; True
+1; Aprender Python; False
+3; Beber cafe; False
