@@ -5,6 +5,6 @@
 - Ensinar como usar `input` para inserir dados no programa
 - Ensinar como usar `output` para tirar dados do programa
 
-- [ ] Console
-- [ ] I/O Disco
+- [x] Console
+- [x] I/O Disco
 - [x] Networking

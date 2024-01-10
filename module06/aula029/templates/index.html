@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gerenciador de Tarefas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .task {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Gerenciador de Tarefas</h1>
+
+    <h3>Criar Tarefa</h3>
+    <div>
+      Descrição: <input type="text" id="taskDescription" /><br />
+      Prioridade:
+      <select id="taskPriority">
+        <option value="1">1 - Alta</option>
+        <option value="2">2 - Média</option>
+        <option value="3">3 - Baixa</option></select
+      ><br />
+      <button onclick="createTask()">Criar Tarefa</button>
+    </div>
+
+    <h3>Tarefas</h3>
+    <div id="tasks"></div>
+
+    <script>
+      const apiUrl = "http://127.0.0.1:5000";
+
+      function createTask() {
+        const description = document.getElementById("taskDescription").value;
+        const priority = document.getElementById("taskPriority").value;
+
+        fetch(`${apiUrl}/task`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            description: description,
+            priority: parseInt(priority),
+            completed: false,
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Tarefa criada:", data);
+            getTasks();
+          })
+          .catch((error) => {
+            console.error("Erro:", error);
+          });
+      }
+
+      function getTasks() {
+        fetch(`${apiUrl}/tasks`)
+          .then((response) => response.json())
+          .then((data) => {
+            const tasksDiv = document.getElementById("tasks");
+            tasksDiv.innerHTML = "";
+            data.forEach((task) => {
+              const taskDiv = document.createElement("div");
+              taskDiv.id = `task-${task.uuid}`;
+              taskDiv.classList.add("task");
+              taskDiv.innerHTML = `
+                    <strong>📗 ${task.description}</strong> (ID: ${task.uuid})
+                    <button onclick="copyToClipboard('${
+                      task.uuid
+                    }')">Copiar ID</button><br>
+                    Prioridade: ${task.priority}<br>
+                    Tempo gasto: ${
+                      task.time_spent !== undefined && task.time_spent !== null
+                        ? task.time_spent + " hrs"
+                        : "Não informado"
+                    }<br>
+                    Concluída: <span class="status">${
+                      task.completed ? "✅" : "⏰"
+                    }</span><br>
+                    <button onclick="deleteTask('${
+                      task.uuid
+                    }')">Deletar</button>
+                    ${
+                      !task.completed
+                        ? `<button onclick="markTaskAsCompleted('${task.uuid}')">Concluir</button>`
+                        : ""
+                    }
+                `;
+              tasksDiv.appendChild(taskDiv);
+            });
+          });
+      }
+
+      function markTaskAsCompleted(taskId) {
+        fetch(`${apiUrl}/task/${taskId}`, {
+          method: "PUT",
+          headers: {  
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ completed: true }),
+        })
+          .then(() => {
+            console.log("Tarefa marcada como concluída");
+            const taskDiv = document.getElementById(`task-${taskId}`);
+            if (taskDiv) {
+              taskDiv.querySelector(".status").textContent = "✅";
+              const completeButton = taskDiv.querySelector(
+                'button[onclick^="markTaskAsCompleted"]'
+              );
+              if (completeButton) {
+                completeButton.remove();
+              }
+            }
+          })
+          .catch((error) => {
+            console.error("Erro:", error);
+          });
+      }
+
+      function deleteTask(taskId) {
+        fetch(`${apiUrl}/task/${taskId}`, {
+          method: "DELETE",
+        })
+          .then(() => {
+            console.log("Tarefa deletada");
+            const taskDiv = document.getElementById(`task-${taskId}`);
+            if (taskDiv) {
+              taskDiv.remove();
+            }
+          })
+          .catch((error) => {
+            console.error("Erro:", error);
+          });
+      }
+
+      function toggleTaskCompletion(taskId, completed) {
+        fetch(`${apiUrl}/task/${taskId}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then(() => {
+            console.log("Tarefa atualizada");
+            const taskDiv = document.getElementById(`task-${taskId}`);
+            if (taskDiv) {
+              taskDiv.querySelector(".status").textContent = !completed
+                ? "✅"
+                : "⏰";
+            }
+          })
+          .catch((error) => {
+            console.error("Erro:", error);
+          });
+      }
+
+      function copyToClipboard(taskId) {
+        navigator.clipboard
+          .writeText(taskId)
+          .then(() => {
+            alert("ID copiado: " + taskId);
+          })
+          .catch((err) => {
+            console.error("Erro ao copiar:", err);
+          });
+      }
+
+      window.onload = getTasks;
+    </script>
+  </body>
+</html>
