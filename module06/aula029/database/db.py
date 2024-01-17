@@ -47,7 +47,7 @@ def escrever_tarefas_no_arquivo(caminho_do_arquivo: str, tarefas: Dict[str, Task
                 uuid = tarefa.uuid.hex
 
                 arquivo.write(f"{uuid}; {prioridade}; {descricao}; {concluido}\n")
-                print(f"✅ Tarefas salva: {uuid}")
+                print(f"✅ Tarefas salva: {uuid}!")
     except Exception as e:
         print(f"🚨 Erro ao escrever no arquivo: {e}")
         resposta = input("Quer tentar denovo? (s/n):").strip()

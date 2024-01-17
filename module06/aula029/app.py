@@ -1,3 +1,4 @@
+import logging
 import json
 from flask import Flask, render_template, request
 from task.task import Task
@@ -5,6 +6,7 @@ from database.db import ler_tarefas_do_arquivo, escrever_tarefas_no_arquivo
 import signal
 import sys
 
+logging.basicConfig(level=logging.DEBUG)
 
 ### WEB SERVER
 app = Flask(__name__)
@@ -73,7 +75,8 @@ def signal_handler(sig, frame):
     escrever_tarefas_no_arquivo("./database/db.txt", tasks)
     sys.exit(0)
 
+
 signal.signal(signal.SIGINT, signal_handler)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0", port=5300)

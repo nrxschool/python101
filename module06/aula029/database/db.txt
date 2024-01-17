@@ -1,4 +1,5 @@
 e0c347a73a5a4696a651c80683215c7a; 2; varrer a casa; True
-a32d7555bcd4435d948cddafa47e6fa3; 1; Aprender Python; False
-c79d2ca1146b4641a444121349483fba; 3; Beber cafe; False
-c17c4b862bea4345b7ec5d60d3e41c2e; 1; Lavar os pratos; False
+a32d7555bcd4435d948cddafa47e6fa3; 1; Aprender Python; True
+c79d2ca1146b4641a444121349483fba; 3; Beber cafe; True
+c17c4b862bea4345b7ec5d60d3e41c2e; 1; Lavar os pratos; True
+c9d955cf04ba42c786e9bfd429e7298d; 1; NOva tareda 123; False
